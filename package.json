@@ -1,14 +1,14 @@
 {
-  "name": "angular-sortablejs",
-  "version": "2.6.0",
-  "description": "SortableJS for Angular",
+  "name": "@nakedcreativity/angular-sortablejs",
+  "version": "2.6.4",
+  "description": "SortableJS for Angular - modified to work with Meteor Angular build scripts",
   "main": "./dist/index.js",
   "typings": "./dist/index",
   "scripts": {
     "start": "watch 'npm run build-local' src",
     "build-local": "npm run build && cp -R dist ../angular-sortablejs-demo/node_modules/angular-sortablejs",
     "build": "rimraf ./dist/* ./codegen/* && ngc -p tsconfig-dist.json",
-    "prepare": "npm run tslint && npm run build",
+
     "tslint": "tslint ./app/**/*.ts -t verbose"
   },
   "repository": {
@@ -25,7 +25,7 @@
     "ng-sortable",
     "ng-sortablejs"
   ],
-  "author": "smnbbrv",
+  "author": "nakedcreativity",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/SortableJS/angular-sortablejs/issues"
@@ -54,5 +54,6 @@
   ],
   "pre-commit": [
     "tslint"
-  ]
+  ],
+  "dependencies": {}
 }
